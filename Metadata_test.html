@@ -1,0 +1,25 @@
+<html>
+
+<head>
+	<script type="text/javascript" src="jwplayer.js"></script>
+	<script>jwplayer.key="0JLG8nlJFVlclaZajNemRJFsJsJ4vzu7Ea6EWA==";</script>
+</head>
+
+<body>
+	<div id="myElement">Loading the player...</div>
+	<script type="text/javascript">
+		var playerInstance = jwplayer("myElement");
+		playerInstance.setup({
+			file:"play.flv",
+			image: "http://example.com/uploads/myPoster.jpg",
+			width: 640,
+			height: 360,
+			title: 'Basic Video Embed',
+			description: 'A video with a basic title and description!',
+			mediaid: '123456'
+		});
+		playerInstance.on('meta',function(event){console.log(event.metadata);});
+	</script>
+</body>
+
+</html>
