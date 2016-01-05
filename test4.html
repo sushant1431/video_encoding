@@ -1,0 +1,43 @@
+<html>
+
+<head>
+	<script type="text/javascript" src="jwplayer.js"></script>
+	<script>jwplayer.key="0JLG8nlJFVlclaZajNemRJFsJsJ4vzu7Ea6EWA==";</script>
+</head>
+
+<body>
+	<div id="myElement">Loading the player...</div>
+	<script type="text/javascript">
+		var playerInstance = jwplayer("myElement");
+		playerInstance.setup({
+			//file: "https://hubble-resources.s3.amazonaws.com/devices/01006644334C01EF00TMARBYVY/clips/44334C01EF00_04_20151129230642000_00001_12_last.flv?AWSAccessKeyId=AKIAJNYQ3ONBL7OLSZDA&Expires=1448964694&Signature=ufCZ9hL%2FrAmX0ZmZma1f2HL7yvc%3D",
+			//file: "rtmp://52.74.231.253:1935/camera/blinkhd.d7ead49ebb36.stream",
+			//file: "https://hubble-resources.s3.amazonaws.com/devices/010066000AE2111363JJHGSSXA/clips/000AE2111363_04_20151127152151000_00001.flv?AWSAccessKeyId=AKIAJNYQ3ONBL7OLSZDA&Expires=1448973047&Signature=DUhwzueRjVsKU894znVz72YGWhk%3D",
+			//file:"https://hubble-resources.s3.amazonaws.com/devices/010066000AE2111363JJHGSSXA/clips/000AE2111363_04_20151127142645000_00001.flv?AWSAccessKeyId=AKIAJNYQ3ONBL7OLSZDA&Expires=1448973267&Signature=TAu59qH07Xu1wfaoUWLmM11V5v0%3D",
+			//file:"speed2.flv",
+			//file:"speed1.flv",
+			//file:"speed1.mp4",
+			//file:"rtmp://52.74.231.253:1935/camera/blinkhd.848fb4000969.stream",
+			//file:"normal.flv",
+			//file:"rtmp://52.7.6.76/vod/_definst_/mp4:sample.mp4
+			//file:"play.flv",
+			//file:"movie.flv",
+			//file:"http://staging-api-resources.s3.amazonaws.com/devices/01093100122A4B3BEBDXBYWAWM/clips/00122A4B3BEB_04_20151228164741000_00001.flv?AWSAccessKeyId=AKIAJ3ZH7VT2BO2WD3QA&Expires=1451383880&Signature=wbHT1sfLtGdH8igHokwpg%2FggZOE%3D",
+			//file:"nikhil_encode.flv",
+			//file:"nikhil_pcm_mulaw_8000.flv",
+			file:"nikhil_pcm_alaw_8000.flv",
+			//file:"dummy.flv",
+			//file:"elephant.flv",
+			image: "http://example.com/uploads/myPoster.jpg",
+			width: 640,
+			height: 360,
+			title: 'Basic Video Embed',
+			description: 'A video with a basic title and description!',
+			mediaid: '123456'
+		});
+		playerInstance.on('meta',function(event){console.log(event.metadata);});
+		//playerInstance.on('meta',function(event){console.log(event.metadata);​});
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,3 @@
+ffmpeg -i "movie.avi" -y -ar 44100 "movie.flv"
+
+ffmpeg -y -i song.mp3 -f flv -acodec pcm_mulaw -ac 1 -ar 8000 song.flv
